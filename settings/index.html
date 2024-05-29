@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Settings</title>
+    <link rel="stylesheet" href="/settings/styles.css">
+</head>
+<body>
+    <main>
+        <section class="sidebar">
+            <div class="sidebar-content">
+                <a class="logo" href="/">
+                    <img alt="Classroom" loading="lazy" src="/images/logo.svg">
+                </a>
+                <div class="menu">
+                    <a class="menu-item" href="/">
+                        <img alt="Dashboard" loading="lazy" width="20" height="20" src="/images/dashboard icon.svg">
+                        <p>Dashboard</p>
+                    </a>
+                    <a class="menu-item" href="/classes/index.html">
+                        <img alt="Classes" loading="lazy" width="20" height="20" src="/images/class.svg">
+                        <p>Classes</p>
+                    </a>
+                    <a class="menu-item" href="/assignment/index.html">
+                        <img alt="Assignment" loading="lazy" width="20" height="20" src="/images/assignment.svg">
+                        <p>Assignment</p>
+                    </a>
+                    <a class="menu-item active" href="/settings/index.html">
+                        <img alt="Settings" loading="lazy" width="20" height="20" src="/images/settings.svg">
+                        <p>Settings</p>
+                    </a>
+                </div>
+            </div>
+            <div class="support-logout">
+                <button class="logout-button">
+                    <img alt="logout" loading="lazy" width="20" height="20" src="/images/logout.svg">
+                    <p>Logout</p>
+                </button>
+            </div>
+        </section>
+        <section class="main-content">
+            <div class="profile-container">
+                <h2>Profile</h2>
+                <div class="profile-picture">
+                    <div class="profile-initials">M</div>
+                    <a href="#" class="change-link">Change</a>
+                </div>
+                <div class="account-settings">
+                    <h3>Account settings</h3>
+                    <p>Change your password and security options, and access other Google services. <a href="#" class="manage-link">Manage</a></p>
+                </div>
+                <div class="change-name">
+                    <h3>Change name</h3>
+                    <p>To change your name, ask your admin. <a href="#" class="learn-more-link">Learn more</a></p>
+                </div>
+            </div>
+            <div class="notifications-container">
+                <h2>Notifications</h2>
+                <div class="notification-settings">
+                    <h3>Email</h3>
+                    <p>These settings apply to the notifications you get by email. <a href="#" class="learn-more-link">Learn more</a></p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                        <p>Allow email notifications</p>
+                    </label>
+                </div>
+                <div class="notification-category">
+                    <h3>Comments</h3>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                        <p>Comments on your posts</p>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                        <p>Comments that mention you</p>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                        <p>Private comments on work</p>
+                    </label>
+                </div>
+                <div class="notification-category">
+                    <h3>Classes you're enrolled in</h3>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                        <p>Work and other posts from teachers</p>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                        <p>Returned work and grades from your teachers</p>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                        <p>Invitations to join classes as a student</p>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                        <p>Due-date reminders for your work</p>
+                    </label>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

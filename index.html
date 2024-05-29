@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   <main>
+
+   
+    <section class="sidebar">
+        <div class="sidebar-content">
+            <a class="logo" href="/">
+                <img alt="planerly" loading="lazy" src="./images/logo.svg">
+            </a>
+            <div class="menu">
+                <a class="menu-item active" >
+                    <img alt="Dashboard" loading="lazy" width="20" height="20" src="./images/dashboard icon.svg">
+                    <p>Dashboard</p>
+                </a>
+                <a class="menu-item" href="./classes/index.html" >
+                    <img alt="Classes" loading="lazy" width="20" height="20" src="./images/class.svg">
+                    <p>Classes</p>
+                </a>
+                <a class="menu-item" href="/assignment/index.html" >
+                    <img alt="Assignment" loading="lazy" width="20" height="20" src="./images/assignment.svg">
+                    <p>Assignment</p>
+                </a>
+                <a class="menu-item" href="/settings/index.html" >
+                    <img alt="Settings" loading="lazy" width="20" height="20" src="./images/settings.svg">
+                    <p>Settings</p>
+                </a>
+            </div>
+        </div>
+        <div class="support-logout">
+           
+            <button class="logout-button">
+                <img alt="logout" loading="lazy" width="20" height="20" src="./images/logout.svg">
+                <p>Logout</p>
+            </button>
+        </div>
+    </section>
+    <div class="main">
+        <div class="top-nav">
+            <div class="search-bar">
+                <img width="20" height="20" src="./images/search.svg" alt="">
+                <input class="search" placeholder="Search" type="text">
+            </div>
+            <div class="user">
+                <img src="./images/user.svg" alt="">
+            
+            
+                <img src="./images/drop.svg" alt="">
+            </div>
+        </div>
+        <div class="welcome">
+            <div>
+                <h2>Welcome Back </h2>
+                <p class="quote">"The best way to predict the future is to create it." - Peter Drucker</p>
+            </div>
+            <!-- <div>
+                <img src="avatar.png" alt="Avatar" class="avatar">
+            </div> -->
+        </div>
+        <div class="assignments">
+            <div class="assignment">
+                <h3>06 Dec 2024 - Tuesday</h3>
+                <p>3 Assignments</p>
+            </div>
+            <div class="assignment">
+                <h3>07 Dec 2024 - Wednesday</h3>
+                <p>2 Assignments</p>
+            </div>
+        </div>
+        <div class="assignment-status">
+            <div>
+                <p>Total Assignments: 27</p>
+                <p>Pending: 8</p>
+                <p>Missed: 3</p>
+                <p>Submitted: 16</p>
+            </div>
+            <div>
+                <img src="./images/pie chart.svg" alt="Assignment Status Chart" class="chart">
+            </div>
+        </div>
+</main>
+</body>
+</html>

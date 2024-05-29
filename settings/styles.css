@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    overflow-y: auto;
+    min-height: 100vh;
+    min-width: 200px;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 8px;
+}
+
+.menu-item:hover {
+    background-color: #ddd;
+}
+
+.menu-item.active {
+    background-color: #D1ECDF;
+    color: white;
+}
+
+.support-logout {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #D1ECDF;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button img {
+    position: absolute;
+    left: 10px;
+}
+
+button p {
+    margin: 0;
+}
+
+.support-button {
+    position: relative;
+    width: 100%;
+}
+
+.logout-button {
+    position: relative;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    .menu-item p, .support-button p, .logout-button p {
+        display: none;
+    }
+
+    button img {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.main {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container,
+.notifications-container {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+.profile-container h2,
+.notifications-container h2 {
+    margin-top: 0;
+}
+
+.profile-picture {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-initials {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #b0a8a8;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.change-link {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.change-link:hover {
+    text-decoration: underline;
+}
+
+.account-settings,
+.change-name,
+.notification-settings,
+.notification-category {
+    margin-bottom: 20px;
+}
+
+.account-settings h3,
+.change-name h3,
+.notification-settings h3,
+.notification-category h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.account-settings p,
+.change-name p,
+.notification-settings p,
+.notification-category p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.manage-link,
+.learn-more-link {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.manage-link:hover,
+.learn-more-link:hover {
+    text-decoration: underline;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch .slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 34px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.switch .slider:before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transition: transform 0.4s;
+}
+
+.switch input:checked + .slider {
+    background-color: #2196F3;
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.switch p {
+    margin: 0 0 0 10px;
+    font-size: 14px;
+    color: #333;
+}
